@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #f9f7f6;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 8vh repeat(3, min-content);
+  grid-template-columns: auto; }
+
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1; }
+
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1; }
+  .heading-2--light {
+    color: #f9f7f6; }
+  .heading-2--dark {
+    color: #54483a; }
+
+.heading-3 {
+  font-size: 1.6rem;
+  color: #258292;
+  text-transform: uppercase; }
+
+.heading-4 {
+  font-size: 1.9rem; }
+  .heading-4--light {
+    color: #f9f7f6; }
+  .heading-4--dark {
+    color: #54483a; }
+
+.btn {
+  background-color: #258292;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all .2s; }
+  .btn:hover {
+    background-color: #034742; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-hg {
+  margin-bottom: 8rem; }
+
+.about {
+  background-color: #258292;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  justify-content: center; }
+  .about__header {
+    padding: 15rem 0 3rem 0;
+    text-align: center; }
+  .about__text {
+    text-align: center; }
+  .about__certifications {
+    padding: 15rem 0 0 0; }
+  .about__certhead {
+    padding: 15rem 0 3rem 0;
+    text-align: center; }
+  .about__cert-items {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto; }
+  .about__cert-item {
+    padding: 8rem; }
+
+.header {
+  background-color: #54483a;
+  display: grid;
+  grid-template-rows: 8vh;
+  grid-template-columns: auto auto;
+  grid-row-gap: 1.5rem;
+  justify-content: space-between; }
+  .header__logo, .header__logo:visited {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-left: 2.5rem;
+    text-decoration: none;
+    color: white; }
+  .header__navlist {
+    display: grid;
+    grid-template-rows: 8vh;
+    grid-template-columns: repeat(4, 8rem);
+    text-align: center;
+    align-items: end;
+    margin-right: 15rem; }
+  .header__navitem {
+    padding-bottom: 1rem; }
+
+.skills {
+  background-color: #c2e20b; }
+
+.projects {
+  background-color: #258292; }
+
+.contact {
+  background-color: #6d5d4b; }
+
+.footer {
+  background-color: #54483a; }
