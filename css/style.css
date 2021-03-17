@@ -127,7 +127,33 @@ body {
     padding-bottom: 1rem; }
 
 .skills {
-  background-color: #c2e20b; }
+  background-color: #f9f7f6;
+  color: black; }
+  .skills__img {
+    width: 100px; }
+  .skills__languages, .skills__frameworks, .skills__database, .skills__devtools, .skills__libraries {
+    display: grid;
+    grid-template-rows: [header] auto [skills] auto;
+    gap: 2rem 3rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 5rem; }
+  .skills__languages {
+    grid-template-columns: repeat(3, 18rem); }
+  .skills__frameworks {
+    grid-template-columns: repeat(4, 18rem); }
+  .skills__database {
+    grid-template-columns: repeat(2, 18rem); }
+  .skills__devtools {
+    grid-template-columns: repeat(4, 18rem); }
+  .skills__libraries {
+    grid-template-columns: repeat(5, 18rem); }
+  .skills__header {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 3rem 0 3rem 0; }
 
 .projects {
   background-color: #258292; }
